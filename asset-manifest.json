@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/Openclassroom_P14_HRnet_REACT_online_version/static/css/main.779e4da0.css",
-    "main.js": "/Openclassroom_P14_HRnet_REACT_online_version/static/js/main.6bdf82fe.js",
+    "main.js": "/Openclassroom_P14_HRnet_REACT_online_version/static/js/main.7534cd0d.js",
     "index.html": "/Openclassroom_P14_HRnet_REACT_online_version/index.html",
     "main.779e4da0.css.map": "/Openclassroom_P14_HRnet_REACT_online_version/static/css/main.779e4da0.css.map",
-    "main.6bdf82fe.js.map": "/Openclassroom_P14_HRnet_REACT_online_version/static/js/main.6bdf82fe.js.map"
+    "main.7534cd0d.js.map": "/Openclassroom_P14_HRnet_REACT_online_version/static/js/main.7534cd0d.js.map"
   },
   "entrypoints": [
     "static/css/main.779e4da0.css",
-    "static/js/main.6bdf82fe.js"
+    "static/js/main.7534cd0d.js"
   ]
 }
