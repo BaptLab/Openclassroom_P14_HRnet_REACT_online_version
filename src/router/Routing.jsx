@@ -10,13 +10,11 @@ import Employees from "../pages/Employees";
  */
 const Routing = () => {
   return (
-    <BrowserRouter basename={"/"}>
-      <Routes>
-        <Route path="/" element={<Homepage />} />
-        <Route path="/employees" element={<Employees />} />
-        <Route path="*" element={<Error404 />} />
-      </Routes>
-    </BrowserRouter>
+    <Routes>
+      <Route path="/" element={<Homepage />} />
+      <Route path="/employees" element={<Employees />} />
+      <Route path="*" element={<Error404 />} />
+    </Routes>
   );
 };
 
