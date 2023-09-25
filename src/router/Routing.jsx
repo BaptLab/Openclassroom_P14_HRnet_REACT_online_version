@@ -10,7 +10,7 @@ import Employees from "../pages/Employees";
  */
 const Routing = () => {
   return (
-    <HashRouter>
+    <HashRouter basename="/">
       <Routes>
         <Route path="/" element={<Homepage />} />
         <Route path="/employees" element={<Employees />} />
