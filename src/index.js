@@ -18,10 +18,10 @@ root.render(
     {/* Provide the Redux store to the entire application */}
     <Provider store={store}>
       {/* Wrap the routing in a BrowserRouter for client-side routing */}
-      <HashRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         {/* Configure the routing for the application */}
         <Routing />
-      </HashRouter>
+      </BrowserRouter>
     </Provider>
   </React.StrictMode>
 );
