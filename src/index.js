@@ -19,10 +19,8 @@ root.render(
     <Provider store={store}>
       {/* Wrap the routing in a BrowserRouter for client-side routing */}
       <BrowserRouter>
-        <HashRouter basename="/">
-          {/* Configure the routing for the application */}
-          <Routing />
-        </HashRouter>
+        {/* Configure the routing for the application */}
+        <Routing />
       </BrowserRouter>
     </Provider>
   </React.StrictMode>

@@ -10,11 +10,13 @@ import Employees from "../pages/Employees";
  */
 const Routing = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/employees" element={<Employees />} />
-      <Route path="*" element={<Error404 />} />
-    </Routes>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/employees" element={<Employees />} />
+        <Route path="*" element={<Error404 />} />
+      </Routes>
+    </HashRouter>
   );
 };
 
