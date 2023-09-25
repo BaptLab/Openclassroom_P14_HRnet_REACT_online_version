@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter } from "react-router-dom";
+import { BrowserRouter, HashRouter } from "react-router-dom";
 import Routing from "./router/Routing";
 import { store } from "./redux/store";
 import { Provider } from "react-redux";
@@ -19,8 +19,10 @@ root.render(
     <Provider store={store}>
       {/* Wrap the routing in a BrowserRouter for client-side routing */}
       <BrowserRouter>
-        {/* Configure the routing for the application */}
-        <Routing />
+        <HashRouter basename="/">
+          {/* Configure the routing for the application */}
+          <Routing />
+        </HashRouter>
       </BrowserRouter>
     </Provider>
   </React.StrictMode>
