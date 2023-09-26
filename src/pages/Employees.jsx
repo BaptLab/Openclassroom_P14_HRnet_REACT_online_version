@@ -67,22 +67,23 @@ const Employees = () => {
     setSearch(event.target.value);
   };
 
+  // Filter the data based on the search input
   const filteredData = employeesList
     .map((employee) => ({
       ...employee,
-      department: employee.department, // Extract the department label
-      state: employee.state, // Extract the state label
+      department: employee.department?.toLowerCase(),
+      state: employee.state?.toLowerCase(),
     }))
     .filter(
       (employee) =>
-        employee.firstName.toLowerCase().includes(search.toLowerCase()) ||
-        employee.lastName.toLowerCase().includes(search.toLowerCase()) ||
-        employee.department.toLowerCase().includes(search.toLowerCase()) ||
-        employee.state.toLowerCase().includes(search.toLowerCase()) ||
-        employee.street.toLowerCase().includes(search.toLowerCase()) ||
-        employee.zipCode.toLowerCase().includes(search.toLowerCase()) ||
-        employee.dateOfBirth.toLowerCase().includes(search.toLowerCase()) ||
-        employee.startDate.toLowerCase().includes(search.toLowerCase())
+        employee.firstName?.toLowerCase()?.includes(search.toLowerCase()) ||
+        employee.lastName?.toLowerCase()?.includes(search.toLowerCase()) ||
+        employee.department?.includes(search.toLowerCase()) ||
+        employee.state?.includes(search.toLowerCase()) ||
+        employee.street?.toLowerCase()?.includes(search.toLowerCase()) ||
+        employee.zipCode?.toLowerCase()?.includes(search.toLowerCase()) ||
+        employee.dateOfBirth?.toLowerCase()?.includes(search.toLowerCase()) ||
+        employee.startDate?.toLowerCase()?.includes(search.toLowerCase())
     );
 
   // Redirection
